@@ -4,10 +4,10 @@ const util = require("util")
 
 //Database Connection Info
 const connection = mysql.createConnection({
-    host:"localhost",
-    user:"root",
-    password:"alterPassword",
-    database:"burgers_db"
+    host:process.env.DBHOST ||"localhost",
+    user:process.env.DBUSER ||"root",
+    password:process.env.DBPASSWORD ||"alterPassword",
+    database:process.env.DATABASE ||"burgers_db"
 })
 
 //Connecting to  database
@@ -22,3 +22,9 @@ connection.query=util.promisify(connection.query)
 
 
 module.exports = connection;
+
+// Host 	rnr56s6e2uk326pj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com
+//Username  avdwxnjnhx3zq2wz
+//Password  s2l03bbvlh5kkqh4
+//Port      3306
+//Database  urkutl4nl3j84uf1
