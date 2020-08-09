@@ -1,5 +1,61 @@
-<h2>Eat-Da-Burgers</h2>
+<div class="container-fluid">
 
+  {{!-- Heading For UI --}}
+  <div class="row topHeading">
+    <div class="col-md-4">
+
+      <ul>
+        {{#each burger}}
+        {{> burgers/burger-block}}
+        {{/each}}
+      </ul>
+    </div>
+
+     
+
+    <div class="col-md-4">
+      <h2 id="eatBurgerTitle">Eat-Da-Burgers</h2>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+
+  {{!-- Input text area --}}
+  <div class="row ">
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+      <form id="inputForm">
+        <div class="form-group">
+          <textarea class="form-control" id="userInputBurger" rows="3"></textarea>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+
+  {{!-- Submit Button --}}
+  <div class="row ">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <button type="button" class="btn btn-primary " id="submitButton">Submit</button>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+
+  {{!-- Footer Notes --}}
+  <div class="row ">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <label id="endingLabel" for="sleepy">Enter a burger you want to eat and click "submit button".</label>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+
+</div>
+
+
+{{!-- 
 <form class="create-form">
 
   <div class="form-group">
@@ -8,4 +64,4 @@
 
   <button type="submit" id="submitButton">Submit</button><br/>
     <label for="sleepy">Enter a burger you want to eat and click "submit button".</label><br>
-</form>
+</form> --}}

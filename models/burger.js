@@ -4,7 +4,6 @@ const orm = require("../config/orm")
 var burger = {
     all: function (cb) {
         orm.all("burgers", function (res) {
-            console.log(res)
             cb(res);
         })
     },

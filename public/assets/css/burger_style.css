@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: blanchedalmond;
+
+}
+
+.topHeading{
+
+    margin-top: 20px;
+}
+
+#eatBurgerTitle{
+    margin-bottom: 250px;
+    margin-left: 80px;
+}
+
+#inputForm{
+    margin-bottom: 50px;
+}
+
+#submitButton{
+    margin-left: 150px;
+}
+
+#endingLabel{
+    margin-top: 50px;
+}
