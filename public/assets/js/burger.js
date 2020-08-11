@@ -6,22 +6,37 @@ $(function () {
     var newBurger = {
       name: $("#userInputBurger").val().trim()
     };
-
-    console.log(newBurger)
     // Send the POST request.
     $.ajax("/api/burger", {
       type: "POST",
       data: newBurger
     }).then(function (res) {
-      
-      console.log("line 20");
-      console.log(res);
       // Reload the page to get the updated list
      location.reload();
     });
   }
+
+  $(".change-devoured").on("click", function(event) {
+    console.log(`on change devoured clicked`)
+    var id = $(this).data("id");
+    var newDevoured = $(this).data("devoured");
+
+    var newBurgerState = {
+      devoured: newDevoured
+    };
+
+    // Send the PUT request.
+    $.ajax("/api/burger/" + id, {
+      type: "PUT",
+      data: newBurgerState
+    }).then(
+      function() {
+        // Reload the page to get the updated list
+        //location.reload();
+      }
+    );
+  });
+
   $("#submitButton").on("click", onClickMe)
 
 })
-
-{/* <p>{{this.burgerName}} </p> */}

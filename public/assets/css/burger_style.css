@@ -12,7 +12,7 @@
 }
 
 #eatBurgerTitle{
-    margin-bottom: 250px;
+    margin-bottom: 100px;
     margin-left: 80px;
 }
 
@@ -26,4 +26,9 @@
 
 #endingLabel{
     margin-top: 50px;
+}
+
+#beforeDevoured{
+    margin-left: 200px;
+    margin-bottom: 150px;
 }
