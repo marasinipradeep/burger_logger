@@ -24,16 +24,17 @@
     <div class="col-sm-4"></div>
 
     {{!-- after clicked on devoured button --}}
-    <div class="col-sm-4">
-
-    </div>
-    <ul>
+    <div class="col-sm-4 jumbotron">
+      <ul>
       {{#each burger}}
       {{#if devoured}}
-      {{> cats/cat-block devoured=false}}
+      {{> burgers/devouredburger-block devoured=false}}
       {{/if}}
       {{/each}}
     </ul>
+
+    </div>
+    
 
 
   </div>

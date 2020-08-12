@@ -32,7 +32,7 @@ $(function () {
     }).then(
       function() {
         // Reload the page to get the updated list
-        //location.reload();
+        location.reload();
       }
     );
   });

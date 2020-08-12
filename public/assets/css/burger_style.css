@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 18px;
     background-color: blanchedalmond;
+    
+   
 
 }
 
-.topHeading{
 
+.topHeading{
     margin-top: 20px;
 }
 
@@ -29,6 +32,6 @@
 }
 
 #beforeDevoured{
-    margin-left: 200px;
+    margin-left: 100px;
     margin-bottom: 150px;
 }
