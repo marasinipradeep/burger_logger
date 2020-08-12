@@ -12,26 +12,25 @@
   {{!-- --}}
   <div class="row" id="beforeDevoured">
     <div class="col-sm-4">
-      <ul>
-
+      <ol>
         {{#each burger}}
         {{#unless devoured}}
         {{> burgers/burger-block devoured=true}}
         {{/unless}}
         {{/each}}
-      </ul>
+      </ol>
     </div>
     <div class="col-sm-4"></div>
 
     {{!-- after clicked on devoured button --}}
-    <div class="col-sm-4 jumbotron">
-      <ul>
+    <div class="col-sm-4">
+      <ol>
       {{#each burger}}
       {{#if devoured}}
       {{> burgers/devouredburger-block devoured=false}}
       {{/if}}
       {{/each}}
-    </ul>
+    </ol>
 
     </div>
     

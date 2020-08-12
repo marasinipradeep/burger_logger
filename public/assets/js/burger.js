@@ -5,7 +5,7 @@ $(function () {
     event.preventDefault()
     console.log(`inside click`)
     var newBurger = {
-      name: $("#userInputBurger").val().trim()
+      name: $("#userInputBurger").val().trim().toUpperCase()
     };
     // Send the POST request.
     $.ajax("/api/burger", {

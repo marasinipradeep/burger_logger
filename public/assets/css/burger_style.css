@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 18px;
-    background-color: blanchedalmond;
+    line-height: 2.5;
+    background-color: lightgray;
 }
 
 
@@ -13,11 +14,14 @@
 
 #eatBurgerTitle{
     margin-bottom: 100px;
-    margin-left: 80px;
+   align-items: center;
+    font-size: 45px;
+    color: green;
 }
 
 #inputForm{
     margin-bottom: 50px;
+    align-items: center;
 }
 
 #submitButton{
@@ -26,9 +30,25 @@
 
 #endingLabel{
     margin-top: 50px;
+    color: red;
 }
 
 #beforeDevoured{
     margin-left: 100px;
-    margin-bottom: 150px;
 }
+
+.list{
+    font-size: 20px;
+    color: blue;
+}
+
+.change-devoured{
+    margin-bottom: 20px;
+    border-radius: 100px;
+}
+
+.devouredlist{
+    color:blue;
+    font-size: 20px;
+}
+
