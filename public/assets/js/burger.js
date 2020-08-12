@@ -1,5 +1,6 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function () {
+  
   function onClickMe() {
     event.preventDefault()
     console.log(`inside click`)
@@ -17,18 +18,11 @@ $(function () {
   }
 
   $(".change-devoured").on("click", function(event) {
-    console.log(`on change devoured clicked`)
     var id = $(this).data("id");
-    var newDevoured = $(this).data("devoured");
-
-    var newBurgerState = {
-      devoured: newDevoured
-    };
 
     // Send the PUT request.
     $.ajax("/api/burger/" + id, {
-      type: "PUT",
-      data: newBurgerState
+      type: "PUT"
     }).then(
       function() {
         // Reload the page to get the updated list

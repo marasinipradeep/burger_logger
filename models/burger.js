@@ -1,20 +1,20 @@
 const orm = require("../config/orm")
 
-
 var burger = {
     all: function (cb) {
         orm.all("burgers", function (res) {
             cb(res);
         })
     },
-    insertInto:function(newBurgerName,cb){
-        orm.insertInto("burgers","burger_name",newBurgerName,function(res){
+    insertInto:function(columnName,vals,cb){
+       
+        orm.insertInto("burgers",columnName,vals,function(res){
             cb(res)
 
         })
     },
-    update: function(id, cb) {
-        orm.update("burgers", id,function(res) {
+    update: function(objColVals,condition, cb) {
+        orm.update("burgers", objColVals,condition,function(res) {
           cb(res);
         });
       }
