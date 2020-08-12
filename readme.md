@@ -135,4 +135,4 @@ The folder structures looks as below:
 <a href= "https://www.youtube.com/watch?v=xbQRDVe8lrk&feature=youtu.be">Click here for demo video link</a>
 
 ## Heroku Live Link 
-<a href= "https://www.youtube.com/watch?v=xbQRDVe8lrk&feature=youtu.be">Click here for live application link</a>
+<a href= "https://burgerloggerusinghandlebars.herokuapp.com/">Click here for live application link</a>
